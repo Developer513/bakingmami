@@ -1,0 +1,44 @@
+
+		* {margin: 0; padding: 0;}
+    header{
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  background: #C9CBB3;
+}
+section{
+  float: left; /*배치가 겹치지 않게 함 왼쪽면을 기준으로 왼쪽에서 오른쪽으로 안겹치게 정렬함*/
+  width: 100%;
+  height: 800px;
+  background: #3B928A;
+}
+article{
+  float: left;
+  width: 100%;
+  height: 600px;
+  background: #9A9B7B;
+}
+
+footer{
+  float:left;
+  width:100%;
+  height:100px;
+  background:#4B5757;
+}
+    
+    /*화면 너비 1200px~768*/
+		@media (max-width: 1200px){
+			/* article {width: 100%; height: 300px;} */
+		}
+
+		/* 화면 너비 768px~480 */
+		@media (max-width: 768px){
+            section {width: 100%; height: 500px;}  
+		}
+
+		/* 화면 너비 480px~0 */
+		@media (max-width: 480px){
+			header {height: 60px;}
+            section {height: 300px;}
+    } 
+    
